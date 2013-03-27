@@ -3,6 +3,6 @@ LIBS = -lssl -lfuse
 CFLAGS = -Wall -ggdb -D_FILE_OFFSET_BITS=64 -DFUSE_USE_VERSION=22 
 OUTPUT = 3dsfuse
 main: $(OBJS)
-	gcc -o $(OUTPUT) $(LIBS) $(OBJS)
+	gcc -o $(OUTPUT) $(OBJS) $(LIBS)
 clean:
 	rm -f $(OUTPUT) $(OBJS)
